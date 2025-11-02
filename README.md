@@ -1,40 +1,58 @@
-Teste
+Mini Project — CI/CD + Docker + API
 
-Objetivo:
+Este é um mini projeto focado em demonstrar conhecimentos práticos de **MLOps**, **CI/CD**, **testes automáticos** e **Docker** utilizando GitHub Actions.  
+O objetivo principal é mostrar a capacidade de automatizar um pipeline simples desde o treino de um modelo até à disponibilização de uma API para predições.
 
-    Criar um pipeline automatizado de Machine Learning que:
+---
 
-    Treina um modelo ML simples (ex: previsão de churn).
+## 🚀 Funcionalidades
 
-    Testa e valida o código automaticamente via GitHub Actions.
+✅ Treino automático de um modelo de Machine Learning  
+✅ API com endpoint de predição (`/predict`)  
+✅ Pipeline CI/CD com GitHub Actions  
+✅ Testes automáticos com `pytest`  
+✅ Build automatizado de imagem Docker  
+✅ Deploy automático da imagem para o Docker Hub  
+✅ Execução containerizada com `docker run`  
+✅ Reprodutibilidade total
 
-    Cria e faz push de uma imagem Docker.
+---
 
-    Faz deploy automático de uma API (FastAPI) para servir o modelo.
-
-
-Activate venv:  .\mlopsVenv\Scripts\Activate.ps1
-Libraries:  pip install scikit-learn fastapi uvicorn pytest joblib
-
-
-
+## Estrutura do projeto
 
 MLOps/
 ├── data/
-│   └── raw.csv
+│ └── raw.csv
 ├── src/
-│   ├
-│   ├── train.py
-│   ├
-│   └── model.joblib
+│ ├── train.py
+│ └── model.joblib
 ├── app/
-│   └── main.py
+│ └── main.py
 ├── tests/
-│   └── test_train.py
+│ └── test_train.py
 ├── requirements.txt
 ├── Dockerfile
 ├── docker-compose.yaml
 ├── .github/
-│   └── workflows/
-│       └── ci-cd.yml
+│ └── workflows/
+│ └── ci-cd.yml
 └── README.md
+
+---
+
+## Tecnologias utilizadas
+
+- Python 3.10
+- FastAPI (ou Flask, caso tenhas usado)
+- Scikit-Learn
+- Joblib
+- Docker
+- GitHub Actions
+- PyTest
+
+---
+
+```bash
+pytest
+
+
