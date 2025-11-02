@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Objetivo:
 
     Criar um pipeline automatizado de Machine Learning que:
@@ -36,3 +37,6 @@ MLOps/
 │   └── workflows/
 │       └── ci-cd.yml
 └── README.md
+=======
+# CI-CD-Project
+>>>>>>> 3b0a444a46e3bc333b95b52338f2ddd33611b890
